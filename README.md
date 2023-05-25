@@ -7,6 +7,10 @@ This is a quality assessment app developed initially for visualizing and manuall
 Clone or download this repository on to your machine. 
 
 #### 2. Organize your files
+In the repository folder, create a folder named `Plots`. 
+
+![image](https://github.com/rachel0427/QA_app_new/assets/55034774/5c04483f-3be4-49a8-a1b6-2ff5352eb41b)
+
 Take all the `png` files of plots of the physiological signals and put them into the `Plots` folder. This app is currently specifically designed for the preprocessed NKI Rockland dataset, and therefore, the naming convention of the file must follow a certain format(e.g. `sub-A00038189_ses-BAS1_task-rest_acq-1400_physio.png`). To use this app for other datasets, you will need to make adjustments to portions of code in the app. 
 
 #### 3. (Importamt) Set up filepath
@@ -14,9 +18,10 @@ Launch MATLAB and type `appdesigner` in the console. Once the app designer launc
 
 ![WechatIMG365](https://github.com/rachel0427/QA_app_new/assets/55034774/3773bb1f-69e2-43b3-a115-453f24b996e7)
 
-Navigate to the `properties` function and locate the line of code that defines the property `myPath`. Change this to the location of this repository on your own machine.
+Navigate to the `properties` function and locate the line of code that defines the property `myPath`. Change this to the location of this repository on your own machine. The below image shows an example of a correct folder path. Be mindful of the forward slash!
 
-![image](https://github.com/rachel0427/QA_app_new/assets/55034774/b9596f75-333f-4f94-b023-b6ea175600e8)
+![3661685025651_ pic](https://github.com/rachel0427/QA_app_new/assets/55034774/dec6690e-2250-4db9-8b32-c97884211913)
+
 
 #### 4. Launch the app
 After you save your changes, you are ready to begin using this app. You can either launch it by clicking the `QA_App_New.mlapp` file downloaded from this repository or clicking the "Play" button in MATLAB. After the app is launched, you should see this interface with the image in the middle being the first plot in your `Plots` folder. 
